@@ -20,7 +20,14 @@ return {
 				end, "Hover")
 				map({ "n", "i" }, "<C-k>", vim.lsp.buf.signature_help, "Signature Help")
 
-				-- gd, gD, gr, gi, gy handled by Snacks picker (snacks.lua)
+				-- ════════════════════════════════════════════════════════════════════════════
+				-- Navigation (Go-to)
+				-- ════════════════════════════════════════════════════════════════════════════
+				map("n", "gd", vim.lsp.buf.definition, "Go to Definition")
+				map("n", "gD", vim.lsp.buf.declaration, "Go to Declaration")
+				map("n", "gi", "<cmd>Telescope lsp_implementations<cr>", "Go to Implementation")
+				map("n", "gt", "<cmd>Telescope lsp_type_definitions<cr>", "Type Definition")
+				map("n", "gr", "<cmd>Telescope lsp_references<cr>", "Show References")
 
 				-- Diagnostics navigation
 				map("n", "[d", function()
