@@ -188,6 +188,7 @@ return {
 					"ts_ls",
 					"rust-analyzer",
 					"intelephense",
+                    "angular-language-server",
 					"bashls",
 					"pyright",
 					"cssls",

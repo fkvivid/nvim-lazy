@@ -32,6 +32,7 @@ return {
 				"vim",
 				"vimdoc",
 				"yaml",
+                "angular",
 			},
 			auto_install = true,
 		})

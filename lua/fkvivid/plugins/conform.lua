@@ -21,6 +21,7 @@ return {
 				html = { "prettier" },
 				css = { "prettier" },
 				scss = { "prettier" },
+                angular = { "prettierd" },
 
 				-- Python
 				python = { "isort", "black" },
