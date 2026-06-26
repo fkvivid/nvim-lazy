@@ -65,8 +65,10 @@ return {
 			sql = { "sqlfluff" },
 			proto = { "buf_lint" },
 			make = { "checkmake" },
-			c = { "cppcheck", "cpplint" },
-			cpp = { "cppcheck", "cpplint" },
+			-- c = { "cppcheck", "cpplint" },
+			-- cpp = { "cppcheck", "cpplint" },
+			c = { "cpplint" },
+			cpp = { "cpplint" },
 		}
 
 		-- ══════════════════════════════════════════════════════════════════════════

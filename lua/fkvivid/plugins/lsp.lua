@@ -188,13 +188,14 @@ return {
 					"ts_ls",
 					"rust-analyzer",
 					"intelephense",
-                    "angular-language-server",
+					"angular-language-server",
 					"bashls",
 					"pyright",
 					"cssls",
 					"html",
 					"jsonls",
 					"yamlls",
+					"clangd",
 					-- Linters
 					"eslint_d",
 					"golangci-lint",
@@ -207,6 +208,7 @@ return {
 					"phpstan",
 					"ruff",
 					"mypy",
+					"cpplint",
 					-- Formatters
 					"stylua",
 					"goimports",
@@ -214,6 +216,7 @@ return {
 					"black",
 					"isort",
 					"shfmt",
+					"clang-format",
 				},
 			})
 		end,

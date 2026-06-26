@@ -7,6 +7,7 @@ return {
 			ensure_installed = {
 				"bash",
 				"c",
+				"cpp",
 				"css",
 				"go",
 				"gomod",
@@ -43,5 +44,13 @@ return {
 			end,
 		})
 		vim.opt.indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
+
+		vim.api.nvim_create_autocmd("FileType", {
+			pattern = { "c", "cpp" },
+			callback = function()
+				vim.opt_local.cindent = true
+				vim.opt_local.indentexpr = ""
+			end,
+		})
 	end,
 }
